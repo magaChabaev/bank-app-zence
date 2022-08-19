@@ -1,0 +1,15 @@
+.home {
+  @apply h-full;
+
+  .title {
+    @apply text-3xl mb-6;
+  }
+
+  .content {
+    @apply flex justify-between flex-wrap w-6;
+
+    .item {
+      @apply flex flex-col gap-5 h-full flex-grow-0;
+    }
+  }
+}

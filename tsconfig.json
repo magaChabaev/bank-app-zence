@@ -16,7 +16,11 @@
     "incremental": true,
     "baseUrl": "./app",
     "paths": {
-      "@/components/*": ["app/components/*"]
+      "@/components/*": ["components/*"],
+      "@/pages/*": ["pages/*"],
+      "@/images/*": ["assets/images/*"],
+      "@/providers/*": ["providers/*"],
+      "@/common/*": ["common/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

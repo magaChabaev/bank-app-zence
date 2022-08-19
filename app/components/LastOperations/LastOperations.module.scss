@@ -1,0 +1,45 @@
+.wrapper {
+  @apply flex flex-col flex-1;
+
+  & > *:not(:last-child) {
+    @apply mb-5;
+  }
+}
+.last-operation {
+  @apply flex justify-between;
+
+  &__type {
+    @apply p-4 border border-gray-300 rounded-md flex items-center justify-between basis-[48%] cursor-pointer;
+
+    &.active {
+      @apply bg-white border-none shadow-md;
+    }
+  }
+
+  &__icon {
+    @apply w-7 h-7;
+  }
+
+  &__description {
+  }
+
+  &__title {
+    @apply text-gray-400;
+  }
+
+  &__amount {
+    @apply font-bold;
+  }
+}
+
+.last-spending {
+  @apply flex justify-between;
+
+  &__title {
+    @apply font-bold;
+  }
+
+  &__all {
+    @apply text-gray-400;
+  }
+}

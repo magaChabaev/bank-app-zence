@@ -1,0 +1,20 @@
+.toggler {
+  @apply relative inline-block w-10 mr-2 align-middle select-none;
+
+  &-checkbox {
+    @apply absolute block w-6 h-6 rounded-full bg-white drop-shadow-2xl border-4 border-gray-300 appearance-none cursor-pointer transition-transform duration-150 ease-in;
+
+    &-active {
+      @apply translate-x-[15px];
+    }
+  }
+
+  &-label {
+    @apply block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer;
+  }
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  @apply bg-green-400;
+  background-color: #68d391;
+}

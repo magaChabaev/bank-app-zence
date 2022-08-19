@@ -1,0 +1,18 @@
+.card {
+  @apply shadow-md p-6 rounded-lg w-96 flex flex-col gap-8;
+
+  &__item {
+    @apply flex justify-between items-center;
+  }
+
+  &__header {
+    @apply text-gray-400 text-sm;
+  }
+
+  &__balance {
+    @apply text-6xl;
+  }
+
+  &__number {
+  }
+}

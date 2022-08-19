@@ -1,0 +1,22 @@
+.head {
+  @apply flex justify-between;
+
+  &__title {
+    @apply font-extrabold;
+  }
+
+  &__select {
+    @apply text-gray-400 bg-transparent;
+
+    & option {
+      @apply bg-none;
+    }
+  }
+}
+
+.canvas {
+  & canvas {
+    width: 24rem !important;
+    height: 200px !important;
+  }
+}

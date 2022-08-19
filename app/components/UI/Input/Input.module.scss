@@ -1,0 +1,15 @@
+.input-wrapper {
+  @apply relative h-10;
+
+  .input {
+    @apply border border-stone-300 rounded-md outline-none p-2;
+  }
+
+  .placeholder {
+    @apply absolute top-1/2 -translate-y-1/2 left-2 transition-transform text-stone-400;
+  }
+
+  &-active .placeholder {
+    @apply -translate-y-[185%] text-black;
+  }
+}

@@ -1,10 +1,25 @@
-import React from 'react'
+import Header from '@/components/Header/Header'
+import Sidebar from '@/components/Sidebar/Sidebar'
+import Head from 'next/head'
+import { PropsWithChildren } from 'react'
 
-type Props = {}
+import styles from './Layout.module.scss'
 
-const Layout = (props: Props) => {
+const Layout: FC<PropsWithChildren<{ title: string }>> = ({
+  title,
+  children,
+}) => {
   return (
-    <div>Layout</div>
+    <>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <Header />
+      <main className={styles.main}>
+        <Sidebar />
+        <section className={styles.content}>{children}</section>
+      </main>
+    </>
   )
 }
 

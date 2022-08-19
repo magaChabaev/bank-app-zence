@@ -1,0 +1,11 @@
+.auth-wrapper {
+  @apply mx-auto max-w-screen-2xl px-6 flex h-screen bg-[#FAFAFA] flex items-center justify-center;
+
+  .auth-container {
+    @apply p-8 bg-[#46BEC3] rounded-md;
+
+    & > *:not(:last-child) {
+      @apply mb-7;
+    }
+  }
+}

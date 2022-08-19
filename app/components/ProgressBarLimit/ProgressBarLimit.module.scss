@@ -1,0 +1,15 @@
+.progress-bar__header {
+  @apply flex justify-between;
+
+  .progress-bar__header-title {
+    @apply text-stone-400 text-sm;
+  }
+}
+
+.container {
+  height: 10px;
+}
+
+.bar-completed {
+  height: 10px;
+}

@@ -1,9 +1,8 @@
-import Home from 'app/components/Home/Home';
-import type { NextPage } from 'next';
-import '../styles/Home.module.css';
+import Auth from '@/pages/Auth/Auth';
+import { NextPage } from 'next';
 
 const HomePage: NextPage = () => {
-  return <Home />;
+  return <Auth />;
 };
 
 export default HomePage;
